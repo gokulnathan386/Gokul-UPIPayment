@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context=".HomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rltop1s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <!---Start Header-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#EEF0F4"
+                android:elevation="5dp"
+                android:layout_height="50dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#EEF0F4"
+                    android:elevation="5dp"
+                    android:layout_height="50dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/change_postcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentStart="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/transback"
+                            android:layout_marginLeft="18dp"
+                            android:src="@drawable/ic_icon_awesome_arrow_left" />
+
+                        <TextView
+                            android:id="@+id/headertxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center"
+                            android:text="    Add your Bank"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#2C2C2E"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!---End Header-->
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrolldash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="85dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/dashll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/MyCardView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardPreventCornerOverlap="false">
+
+                        <LinearLayout
+                            android:id="@+id/service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/round_corner"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="3">
+
+
+                                <LinearLayout
+                                    android:id="@+id/hdfcBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/hdfclayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/hdfc_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="HDFC Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/icicBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/icicilayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="3dp"
+                                            android:src="@drawable/icici_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="ICICI Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/sbiBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/sbilayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="5dp"
+                                            android:src="@drawable/sbi_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="SBI Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="3">
+
+
+                                <LinearLayout
+                                    android:id="@+id/kotkaBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/kotkalayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="5dp"
+                                            android:src="@drawable/kotak_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="KOTAK Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/aixsBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/axislayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="2dp"
+                                            android:src="@drawable/axis_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="AXIS Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/punjaBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/punjablayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="10dp"
+                                            android:src="@drawable/punjab_bank_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="PUNJAB Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="3">
+
+
+                                <LinearLayout
+                                    android:id="@+id/bankOfBorderBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/bankofboarderLayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="5dp"
+                                            android:src="@drawable/bank_of_baroda_icon" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="Bank of Baroda Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/indianoverBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/indianoversesLayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="10dp"
+                                            android:src="@drawable/indian_overseas_bank" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="Indian Overseas Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/induslandBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/indlusLayout"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/dashboard_rect_shape">
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:padding="10dp"
+                                            android:src="@drawable/induslnd_bank" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:text="Induslnd Bank"
+                                            android:textColor="#333333"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/MyCardView1"
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardPreventCornerOverlap="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginHorizontal="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Enter Bank Details"
+                                android:textColor="#333333"
+                                android:textSize="15dp" />
+
+<!--
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginVertical="5dp"
+                                android:hint="Enter your Bank Name"
+                                android:layout_marginHorizontal="15dp"
+                                android:textColorHint="#173303"
+                                android:theme="@style/EditTextThemeOverlay"
+                                app:boxCornerRadiusBottomEnd="10dp"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxCornerRadiusTopStart="10dp"
+                                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                                app:hintTextAppearance="@style/Text2Label"
+                                app:hintTextColor="#173303">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/nameAccount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textSize="12sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+-->
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="5dp"
+                                android:hint="Account Holder Name"
+                                android:textColorHint="#173303"
+                                android:theme="@style/EditTextThemeOverlay"
+                                app:boxCornerRadiusBottomEnd="10dp"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxCornerRadiusTopStart="10dp"
+                                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                                app:hintTextAppearance="@style/Text2Label"
+                                app:hintTextColor="#173303">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/holderNameTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textSize="12sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/upiCreateDoneBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginHorizontal="90dp"
+                        android:textAllCaps="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/themerect"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#173303"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

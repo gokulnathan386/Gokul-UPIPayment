@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheetbg"
+    android:backgroundTint="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/donelayy"
+        android:gravity="center">
+
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_19081"/>
+
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_toRightOf="@+id/kk"
+            android:layout_centerVertical="true"
+            android:textColor="#173303"
+            android:textSize="18sp"
+            android:text="UPI Id created Successfully!"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/donee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/themerect"
+            android:padding="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="#173303"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="15dp"
+                android:visibility="invisible"
+                android:src="@drawable/frame" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335210548917",
+    "project_id": "upi-payment-gateway-bbbf7",
+    "storage_bucket": "upi-payment-gateway-bbbf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335210548917:android:4db994141eaf4f1721f8fc",
+        "android_client_info": {
+          "package_name": "com.example.upipaymentgateway"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPrz7owQzeMx2DW-Awh6FPSBpDNSvFC0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<font-family
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<font
+		android:font="@font/roboto_regular_0"
+		android:fontStyle="normal"
+		app:font="@font/roboto_regular_0"
+		app:fontStyle="normal"/>
+</font-family>

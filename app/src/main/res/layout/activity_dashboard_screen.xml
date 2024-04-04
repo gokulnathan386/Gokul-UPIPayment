@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DashboardScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltop1s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <!---Start Header-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:background="#EEF0F4"
+            android:elevation="5dp"
+            android:layout_height="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#EEF0F4"
+                android:elevation="5dp"
+                android:layout_height="50dp">
+
+
+                <LinearLayout
+                    android:id="@+id/change_postcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/transback"
+                        android:layout_marginLeft="18dp"
+                        android:src="@drawable/ic_icon_awesome_arrow_left" />
+
+                    <TextView
+                        android:id="@+id/headertxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="    Transition"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#2C2C2E"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!---End Header-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/upiIDName"
+        android:text="gokul@upi"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCardView1"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColorHint="#173303"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:hint="Enter Amount to be paid"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:hintTextAppearance="@style/Text2Label"
+        app:hintTextColor="#173303">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountUPI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColorHint="#173303"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:hint="Enter your UPI Id"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:hintTextAppearance="@style/Text2Label"
+        app:hintTextColor="#173303">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/upiId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColorHint="#173303"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:hint="Enter your Name"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:hintTextAppearance="@style/Text2Label"
+        app:hintTextColor="#173303">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountCreditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColorHint="#173303"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:hint="Enter Payment Description"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:hintTextAppearance="@style/Text2Label"
+        app:hintTextColor="#173303">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<Button
+    android:id="@+id/idBtnMakePayment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:backgroundTint="#9FE870"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="50dp"
+    android:text="Pay UPI"
+    android:textAllCaps="false" />
+
+<TextView
+    android:id="@+id/idTVTransactionDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/idBtnMakePayment"
+    android:layout_marginTop="30dp"
+    android:text="Transaction Details"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:visibility="gone" />
+
+</LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCardView1"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:id="@+id/transitionHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="Transaction History"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
